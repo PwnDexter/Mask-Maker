@@ -7,10 +7,7 @@ usage: ./maskgen.py <charset> <length>
 import sys
 
 def genMiddle(length):
-        mask = '?1'
-        for i in range(1, length):
-            mask = "{}{}".format(mask, '?1')
-        return mask
+    return '?1' * length
 
 def getCharset():
     try: customCharset
